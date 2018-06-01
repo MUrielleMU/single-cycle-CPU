@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri May 25 21:04:58 2018
+# Process ID: 1760
+# Log file: C:/Users/Administrator/Desktop/ECOP-16340158-02/code/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Administrator/Desktop/ECOP-16340158-02/code/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Administrator/Desktop/ECOP-16340158-02/code/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav/xsim.dir/TestSingleCycleCpu_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:32 . Memory (MB): peak = 92.371 ; gain = 0.285
+
+    while executing
+"webtalk_transmit -clientid 3347251676 -regid "210766071_0_0_148" -xml C:/Users/Administrator/Desktop/ECOP-16340158-02/code/SingleCycleCPU/SingleCycleC..."
+    (file "C:/Users/Administrator/Desktop/ECOP-16340158-02/code/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav/xsim.dir/TestSingleCycleCpu_behav/webtalk/xsim_webt..." line 32)
+INFO: [Common 17-206] Exiting Webtalk at Fri May 25 21:05:30 2018...

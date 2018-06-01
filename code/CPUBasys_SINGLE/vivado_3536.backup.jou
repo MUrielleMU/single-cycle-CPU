@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri May 25 18:45:50 2018
+# Process ID: 1676
+# Log file: C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only C:/Users/Administrator/Desktop/ECOP-16340158-02/code/SingleCycleCPU/SingleCycleCPU.xpr
+close_project
+open_project C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183796003A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183796003A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.runs/impl_1/showCPU.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.runs/impl_1/showCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw_target
+close_hw
+launch_simulation
+source showCPU.tcl
+close_sim

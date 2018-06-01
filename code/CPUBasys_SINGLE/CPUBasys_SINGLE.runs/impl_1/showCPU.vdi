@@ -1,0 +1,739 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri May 25 18:51:20 2018
+# Process ID: 2752
+# Log file: C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.runs/impl_1/showCPU.vdi
+# Journal file: C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source showCPU.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.srcs/constrs_1/new/cpu.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.srcs/constrs_1/new/cpu.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.03' and will expire in -420 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 445.305 ; gain = 3.086
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-194] Inserted BUFG Debounce_n_1_BUFG_inst to drive 32 load(s) on clock net Debounce_n_1
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 16be0e370
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 925.797 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 16be0e370
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 925.797 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 30 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 1b0b1fca0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 925.797 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 925.797 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1b0b1fca0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 925.797 ; gain = 0.000
+Implement Debug Cores | Checksum: 224569f71
+Logic Optimization | Checksum: 224569f71
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+Ending Power Optimization Task | Checksum: 1b0b1fca0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 925.797 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 925.797 ; gain = 483.578
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 925.797 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.runs/impl_1/showCPU_drc_opted.rpt.
+INFO: [#UNDEF] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.03' and will expire in -420 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: fcc8aecc
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 925.797 ; gain = 0.000
+
+Phase 2 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 925.797 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 925.797 ; gain = 0.000
+
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1 Pre-Place Cells
+Phase 2.1.1 Pre-Place Cells | Checksum: 739fd760
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 925.797 ; gain = 0.000
+WARNING: [Place 30-568] A LUT 'Debounce/nextPC[7]_i_2' is driving clock pin of 14 registers. This could lead to large hold time violations. First few involved registers are:
+	SingleCycleCPUBasys/pcAdd/nextPC_reg[7] {FDCE}
+	SingleCycleCPUBasys/pcAdd/nextPC_reg[1] {FDCE}
+	SingleCycleCPUBasys/pcAdd/nextPC_reg[2] {FDCE}
+	SingleCycleCPUBasys/pcAdd/nextPC_reg[3] {FDCE}
+	SingleCycleCPUBasys/pcAdd/nextPC_reg[4] {FDCE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.2 IO & Clk Clean Up
+Phase 2.1.2 IO & Clk Clean Up | Checksum: 739fd760
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.527 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 2.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.3 Implementation Feasibility check On IDelay | Checksum: 739fd760
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.528 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 2.1.4 Commit IO Placement
+Phase 2.1.4 Commit IO Placement | Checksum: 6bf8d330
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.529 . Memory (MB): peak = 943.309 ; gain = 17.512
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e34c1a63
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.529 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 2.2 Build Placer Netlist Model
+
+Phase 2.2.1 Place Init Design
+Phase 2.2.1 Place Init Design | Checksum: f465ad3b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.542 . Memory (MB): peak = 943.309 ; gain = 17.512
+Phase 2.2 Build Placer Netlist Model | Checksum: f465ad3b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.542 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 2.3 Constrain Clocks/Macros
+
+Phase 2.3.1 Constrain Global/Regional Clocks
+Phase 2.3.1 Constrain Global/Regional Clocks | Checksum: f465ad3b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.544 . Memory (MB): peak = 943.309 ; gain = 17.512
+Phase 2.3 Constrain Clocks/Macros | Checksum: f465ad3b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.544 . Memory (MB): peak = 943.309 ; gain = 17.512
+Phase 2 Placer Initialization | Checksum: f465ad3b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.545 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 1aa9d4afe
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.683 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 1aa9d4afe
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.684 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 11aa9794a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.701 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 1866c765b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.705 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 4.4 Small Shape Detail Placement
+
+Phase 4.4.1 Commit Small Macros & Core Logic
+
+Phase 4.4.1.1 Commit Slice Clusters
+Phase 4.4.1.1 Commit Slice Clusters | Checksum: 12e7fe5b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.753 . Memory (MB): peak = 943.309 ; gain = 17.512
+Phase 4.4.1 Commit Small Macros & Core Logic | Checksum: 12e7fe5b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.753 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: 12e7fe5b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.758 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 12e7fe5b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.759 . Memory (MB): peak = 943.309 ; gain = 17.512
+Phase 4.4 Small Shape Detail Placement | Checksum: 12e7fe5b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.761 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 4.5 Re-assign LUT pins
+Phase 4.5 Re-assign LUT pins | Checksum: 12e7fe5b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.765 . Memory (MB): peak = 943.309 ; gain = 17.512
+Phase 4 Detail Placement | Checksum: 12e7fe5b6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.766 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: f1677304
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.767 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 6 Post Commit Optimization
+Phase 6 Post Commit Optimization | Checksum: f1677304
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.768 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 5.2 Sweep Clock Roots: Post-Placement
+Phase 5.2 Sweep Clock Roots: Post-Placement | Checksum: f1677304
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.769 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 5.3 Post Placement Cleanup
+Phase 5.3 Post Placement Cleanup | Checksum: f1677304
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.769 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 5.4 Placer Reporting
+Phase 5.4 Placer Reporting | Checksum: f1677304
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.770 . Memory (MB): peak = 943.309 ; gain = 17.512
+
+Phase 5.5 Final Placement Cleanup
+Phase 5.5 Final Placement Cleanup | Checksum: f1677304
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.770 . Memory (MB): peak = 943.309 ; gain = 17.512
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: f1677304
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.771 . Memory (MB): peak = 943.309 ; gain = 17.512
+Ending Placer Task | Checksum: 6f098914
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.774 . Memory (MB): peak = 943.309 ; gain = 17.512
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 943.309 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 943.309 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 943.309 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 943.309 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.03' and will expire in -420 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri May 25 18:52:39 2018
+# Process ID: 3176
+# Log file: C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.runs/impl_1/showCPU.vdi
+# Journal file: C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source showCPU.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.srcs/constrs_1/new/cpu.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.srcs/constrs_1/new/cpu.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.03' and will expire in -420 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 449.281 ; gain = 2.824
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-194] Inserted BUFG Debounce_n_1_BUFG_inst to drive 96 load(s) on clock net Debounce_n_1
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1d4f342db
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 929.949 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 1d4f342db
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 929.949 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 168 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 10a06809c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.232 . Memory (MB): peak = 929.949 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 929.949 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 10a06809c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.239 . Memory (MB): peak = 929.949 ; gain = 0.000
+Implement Debug Cores | Checksum: d10fa030
+Logic Optimization | Checksum: d10fa030
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+Ending Power Optimization Task | Checksum: 10a06809c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 929.949 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 929.949 ; gain = 483.492
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 929.949 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.runs/impl_1/showCPU_drc_opted.rpt.
+INFO: [#UNDEF] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.03' and will expire in -420 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: a15cc989
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 929.949 ; gain = 0.000
+
+Phase 2 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 929.949 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 929.949 ; gain = 0.000
+
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1 Pre-Place Cells
+Phase 2.1.1 Pre-Place Cells | Checksum: 739fd760
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 929.949 ; gain = 0.000
+WARNING: [Place 30-568] A LUT 'Debounce/nextPC[7]_i_3' is driving clock pin of 14 registers. This could lead to large hold time violations. First few involved registers are:
+	SingleCycleCPUBasys/pc/curPC_reg[1] {FDCE}
+	SingleCycleCPUBasys/pc/curPC_reg[2] {FDCE}
+	SingleCycleCPUBasys/pc/curPC_reg[3] {FDCE}
+	SingleCycleCPUBasys/pc/curPC_reg[4] {FDCE}
+	SingleCycleCPUBasys/pc/curPC_reg[5] {FDCE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.2 IO & Clk Clean Up
+Phase 2.1.2 IO & Clk Clean Up | Checksum: 739fd760
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.741 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 2.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.3 Implementation Feasibility check On IDelay | Checksum: 739fd760
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.746 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 2.1.4 Commit IO Placement
+Phase 2.1.4 Commit IO Placement | Checksum: af32d25f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.747 . Memory (MB): peak = 948.559 ; gain = 18.609
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1362a6be5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.747 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 2.2 Build Placer Netlist Model
+
+Phase 2.2.1 Place Init Design
+Phase 2.2.1 Place Init Design | Checksum: 22cc7b615
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.810 . Memory (MB): peak = 948.559 ; gain = 18.609
+Phase 2.2 Build Placer Netlist Model | Checksum: 22cc7b615
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.811 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 2.3 Constrain Clocks/Macros
+
+Phase 2.3.1 Constrain Global/Regional Clocks
+Phase 2.3.1 Constrain Global/Regional Clocks | Checksum: 22cc7b615
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.815 . Memory (MB): peak = 948.559 ; gain = 18.609
+Phase 2.3 Constrain Clocks/Macros | Checksum: 22cc7b615
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.817 . Memory (MB): peak = 948.559 ; gain = 18.609
+Phase 2 Placer Initialization | Checksum: 22cc7b615
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.818 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 20f0650d3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 20f0650d3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 172379db3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 12e2b1ecd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 4.4 Small Shape Detail Placement
+
+Phase 4.4.1 Commit Small Macros & Core Logic
+
+Phase 4.4.1.1 Commit Slice Clusters
+Phase 4.4.1.1 Commit Slice Clusters | Checksum: 16a85ff1d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+Phase 4.4.1 Commit Small Macros & Core Logic | Checksum: 16a85ff1d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: 16a85ff1d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 16a85ff1d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+Phase 4.4 Small Shape Detail Placement | Checksum: 16a85ff1d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 4.5 Re-assign LUT pins
+Phase 4.5 Re-assign LUT pins | Checksum: 16a85ff1d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+Phase 4 Detail Placement | Checksum: 16a85ff1d
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: e24da861
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 6 Post Commit Optimization
+Phase 6 Post Commit Optimization | Checksum: e24da861
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 5.2 Sweep Clock Roots: Post-Placement
+Phase 5.2 Sweep Clock Roots: Post-Placement | Checksum: e24da861
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 5.3 Post Placement Cleanup
+Phase 5.3 Post Placement Cleanup | Checksum: e24da861
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 5.4 Placer Reporting
+Phase 5.4 Placer Reporting | Checksum: e24da861
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+
+Phase 5.5 Final Placement Cleanup
+Phase 5.5 Final Placement Cleanup | Checksum: f2b87181
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: f2b87181
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+Ending Placer Task | Checksum: bcbfc68b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 948.559 ; gain = 18.609
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.205 . Memory (MB): peak = 948.559 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 948.559 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 948.559 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 948.559 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.03' and will expire in -420 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 13030ba00
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1020.199 ; gain = 71.641
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Pre Route Cleanup
+Phase 2.1 Pre Route Cleanup | Checksum: 13030ba00
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1024.695 ; gain = 76.137
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: e2b727fa
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1030.184 ; gain = 81.625
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1af83ba54
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1030.184 ; gain = 81.625
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 436
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 184c64682
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1030.184 ; gain = 81.625
+Phase 4 Rip-up And Reroute | Checksum: 184c64682
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1030.184 ; gain = 81.625
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 184c64682
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1030.184 ; gain = 81.625
+
+Phase 6 Post Hold Fix
+Phase 6 Post Hold Fix | Checksum: 184c64682
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1030.184 ; gain = 81.625
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.810572 %
+  Global Horizontal Routing Utilization  = 1.09175 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 43.2432%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 40.5405%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 39.7059%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 52.9412%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 184c64682
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1030.184 ; gain = 81.625
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 184c64682
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1030.184 ; gain = 81.625
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: f6aae2ce
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1030.184 ; gain = 81.625
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1030.184 ; gain = 81.625
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 1030.184 ; gain = 81.625
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.265 . Memory (MB): peak = 1030.184 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Administrator/Desktop/ECOP-16340158-02/code/CPUBasys_SINGLE/CPUBasys_SINGLE.runs/impl_1/showCPU_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2017.03' and will expire in -420 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Debounce/CpuCLK is a gated clock net sourced by a combinational pin Debounce/nextPC[7]_i_3/O, cell Debounce/nextPC[7]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_115[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[0][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[0][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_116[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[1][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[1][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_117[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[2][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[2][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_118[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[3][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[3][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_119[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[4][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[4][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_120[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[5][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[5][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_121[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[6][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[6][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_122[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[7][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[7][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_123[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[8][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[8][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_124[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[9][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[9][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_125[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[10][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[10][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_126[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[11][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[11][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_127[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[12][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[12][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_128[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[13][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[13][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_129[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[14][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[14][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_130[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[15][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[15][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_131[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[16][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[16][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_132[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[17][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[17][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_133[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[18][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[18][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_134[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[19][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[19][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_135[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[20][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[20][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_136[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[21][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[21][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_137[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[22][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[22][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_138[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[23][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[23][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_139[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[24][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[24][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_140[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[25][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[25][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_141[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[26][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[26][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_142[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[27][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[27][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_143[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[28][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[28][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_144[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[29][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[29][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_145[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[30][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[30][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/ControlUnit/nextPC_reg[7]_146[0] is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/ControlUnit/ram_reg[31][7]_i_2/O, cell SingleCycleCPUBasys/ControlUnit/ram_reg[31][7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net SingleCycleCPUBasys/InsMEM/nextPC_reg[7]_7 is a gated clock net sourced by a combinational pin SingleCycleCPUBasys/InsMEM/ExtSel_reg_i_2/O, cell SingleCycleCPUBasys/InsMEM/ExtSel_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PLHOLDVIO-2) Non-Optimal connections which could lead to hold violations - A LUT Debounce/nextPC[7]_i_3 is driving clock pin of 14 cells. This could lead to large hold time violations. First few involved cells are:
+    SingleCycleCPUBasys/pc/curPC_reg[1] {FDCE}
+    SingleCycleCPUBasys/pc/curPC_reg[2] {FDCE}
+    SingleCycleCPUBasys/pc/curPC_reg[3] {FDCE}
+    SingleCycleCPUBasys/pc/curPC_reg[4] {FDCE}
+    SingleCycleCPUBasys/pc/curPC_reg[5] {FDCE}
+
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 36 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./showCPU.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1377.141 ; gain = 324.664
+INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file showCPU.hwdef
+INFO: [Common 17-206] Exiting Vivado at Fri May 25 18:53:41 2018...
