@@ -1,1 +1,2 @@
-# 单周期CPU的设计与实现
+单周期CPU仿真项目：`SingleCycleCPU`
+
